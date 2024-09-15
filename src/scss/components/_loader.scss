@@ -1,0 +1,19 @@
+.loader {
+    color: var(--theme-color);
+    fill: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 90vh;
+  
+    svg {
+      height: 10rem !important;
+      width: 10rem !important;
+      .A{
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  

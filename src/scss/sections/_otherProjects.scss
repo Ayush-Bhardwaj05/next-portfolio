@@ -1,0 +1,185 @@
+// .Oprojects {
+//     padding: 10px 0;
+//     width: 100%;
+//     align-items: center;
+//     font-family: var(--raleway);
+//     h2{
+//         color: var(--lightest-slate);
+//     }
+//     .title {
+//       text-align: center;
+//       margin-bottom: 50px;
+//       h2 {
+//         font-size: clamp(24px, 5vw, 40px);
+//         font-weight: bold;
+
+//       }
+//     }
+  
+//     .projects-container {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//       grid-gap: 10px;
+  
+//       .project {
+//         background-color: #1e1e1e;
+//         border-radius: 10px;
+//         padding: 20px;
+//         transition: transform 0.3s ease;
+//         &:hover {
+//           transform: translateY(-10px);
+//         }
+  
+//         .project-info {
+//           display: flex;
+//           flex-direction: column;
+//           //width: 100%;
+//           background-color: #1e85889d;
+  
+//           .project-info-title {
+//             font-size: 24px;
+//             margin-bottom: 10px;
+//             color: #fff;
+//             &:hover{
+//                 color: var(--theme-color);
+//             }
+//           }
+  
+//           .project-info-description {
+//             font-size: 16px;
+//             margin-bottom: 15px;
+//             color: #ccc;
+//           }
+  
+//           .project-info-tech-list {
+//             display: flex;
+//             flex-wrap: wrap;
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+  
+//             li {
+//               font-size: 14px;
+//               color: var(--lightest-slate);
+//               margin-right: 15px;
+//             }
+//           }
+  
+//           .project-info-links {
+//             margin-top: 15px;
+//             display: flex;
+//             align-items: center;
+  
+//             .project-info-links-item {
+//               a {
+//                 text-decoration: none;
+//                 color: #031a2a;
+//                 // border-color: #1e1e1e;
+//                 font-size: 30px;
+//                 transition: color 0.3s ease;
+//                 &:hover {
+//                   color: #ffffff;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+  .Oprojects {
+    padding: 10px 0;
+    width: 100%;
+    justify-items: center;
+    font-family: var(--raleway);
+
+    h2 {
+        color: var(--lightest-slate);
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: clamp(24px, 5vw, 40px);
+            font-weight: bold;
+        }
+    }
+
+    .projects-container {
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        justify-content: center; 
+        padding: 0 10px; 
+        .project {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            justify-items: center;
+            
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .project-info {
+                display: flex;
+                flex-direction: column;
+                background-color: #1e85889d;
+                
+                .project-info-title {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    color: #fff;
+
+                    &:hover {
+                        color: var(--theme-color);
+                    }
+                }
+
+                .project-info-description {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    color: #ccc;
+                }
+
+                .project-info-tech-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        font-size: 14px;
+                        color: var(--lightest-slate);
+                        margin-right: 15px;
+                    }
+                }
+
+                .project-info-links {
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: center;
+
+                    .project-info-links-item {
+                        a {
+                            text-decoration: none;
+                            color: #031a2a;
+                            font-size: 30px;
+                            transition: color 0.3s ease;
+
+                            &:hover {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
