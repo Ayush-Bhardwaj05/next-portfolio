@@ -5,8 +5,7 @@
 
   &-link {
     position: fixed;
-    bottom: 0;
-    right: 4rem;
+    right: 4rem; 
     writing-mode: vertical-rl;
     text-decoration: none;
     color: var(--light-slate);
@@ -39,14 +38,12 @@
     background-color: var(--light-slate);
   }
 
-  /* Adjust for medium screens */
   @media screen and (max-width: 1080px) {
     &-link {
-      right: 2rem;
+      right: 2rem; 
     }
   }
 
-  /* Hide the entire email section for small screens */
   @media screen and (max-width: 768px) {
     display: none;
   }
