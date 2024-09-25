@@ -38,10 +38,9 @@ function OtherProjects() {
         {projectsData.map(
           ({
             projectDescription,
-            projectLink,
-            projectExternalLinks,
             projectName,
             projectTech,
+            projectExternalLinks,
           }) => {
             return (
               <motion.div
@@ -74,9 +73,10 @@ function OtherProjects() {
                         href={projectExternalLinks.github}
                         className="project-info-links-item-link"
                       >
-                        <span><FiGithub/></span>
+                        <span><FiGithub /></span>
                       </Link>
                     </li>
+                    
                   </ul>
                 </div>
               </motion.div>

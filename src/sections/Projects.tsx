@@ -7,17 +7,41 @@ import { motion } from "framer-motion";
 function Projects() {
   const projectsData = [
     {
-      image: "/snappy.png",
-      projectName: "Snappy - ChatApp",
-      projectLink: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp",
+      image: "/project1.png",
+      projectName: "Pokedex",
       projectDescription:
-        "Snappy is a real-time chat application built with React, Node.js, and MongoDB. It includes features like real-time messaging, user authentication, emoji integration, and a responsive design. Users can register, chat, and enjoy seamless communication with a smooth interface.",
-      projectTech: ["React", "Node.js", "Express", "MongoDB", "Styled Components", "Socket.io"],
+        "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
+      projectTech: [
+        "React",
+        "Redux Toolkit",
+        "SCSS",
+        "Firebase",
+        "Typescript",
+        "PokeApi",
+      ],
       projectExternalLinks: {
-        github: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp",
-        externalLink: "",
+        github: "https://github.com/Ayush-Bhardwaj05/Pokedex",
+        externalLink: "https://pokedex-ayush05.netlify.app/",
       },
     },
+    {
+      image: "/snappy.png",
+      projectName: "Realtime Chat App",
+      projectDescription:
+        "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+      projectTech: [
+        "React",
+        "Sockets",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Styled Components",
+      ],
+      projectExternalLinks: {
+        github: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp/tree/main",
+        externalLink: "",
+      },
+    }
   ];
   return (
     <div className="projects" id="work">
@@ -39,7 +63,6 @@ function Projects() {
           ({
             image,
             projectDescription,
-            projectLink,
             projectExternalLinks,
             projectName,
             projectTech,
@@ -58,7 +81,7 @@ function Projects() {
                 }}
               >
                 <div className="project-image">
-                   <div className="project-image-overlay"></div>
+                  <div className="project-image-overlay"></div>
                   <div className="project-image-container">
                     <Image src={image} fill alt={projectName} quality={100} />
                   </div>

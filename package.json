@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.5.4",
+    "netlify-cli": "^17.36.2",
     "next": "14.2.10",
     "react": "^18",
     "react-dom": "^18",
