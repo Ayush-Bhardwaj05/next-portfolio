@@ -1,19 +1,37 @@
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import { FiGithub } from "react-icons/fi";
 
 function OtherProjects() {
   const projectsData = [
     {
-      projectName: 'Keeper App',
-      projectLink: 'https://github.com/YourUsername/KeeperApp',
+      projectName: "Keeper App",
+      projectLink: "https://github.com/Ayush-Bhardwaj05/Keeper-App",
       projectDescription:
-        'Keeper is a note-taking app built with React. It allows users to add, edit, and delete notes, providing a simple UI for managing tasks and ideas.',
-      projectTech: ['React', 'JavaScript', 'CSS', 'HTML'],
+        "Keeper is a note-taking app built with React. It allows users to add, edit, and delete notes, providing a simple UI for managing tasks and ideas.",
+      projectTech: ["React", "JavaScript", "CSS", "HTML"],
       projectExternalLinks: {
-        github: 'https://github.com/YourUsername/KeeperApp',
-        externalLink: '',
+        github: "https://github.com/Ayush-Bhardwaj05/Keeper-App",
+        externalLink: "",
+      },
+    },
+    {
+      projectName: "Snappy - Chat App",
+      projectLink: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp",
+      projectDescription:
+        "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React.",
+      projectTech: [
+        "React",
+        "Sockets",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Styled Components",
+      ],
+      projectExternalLinks: {
+        github: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp/tree/main",
+        externalLink: "",
       },
     },
   ];
@@ -73,10 +91,11 @@ function OtherProjects() {
                         href={projectExternalLinks.github}
                         className="project-info-links-item-link"
                       >
-                        <span><FiGithub /></span>
+                        <span>
+                          <FiGithub />
+                        </span>
                       </Link>
                     </li>
-                    
                   </ul>
                 </div>
               </motion.div>

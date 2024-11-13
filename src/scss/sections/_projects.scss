@@ -39,6 +39,7 @@
           position: relative;
           width: 600px;
           height: 300px;
+          border-color: azure;
         }
         position: absolute;
         top: 0;
@@ -140,6 +141,7 @@
         .project-image {
           right: 0;
           left: initial;
+          border: white;
         }
         .project-info {
           align-items: flex-start;
@@ -183,6 +185,7 @@
           .project-image {
             left: 0;
             right: initial;
+            border: white;
           }
         }
       }
@@ -196,7 +199,9 @@
           &-container {
             width: 500px;
             height: 300px;
+            border: white;
           }
+          border: white;
         }
         .project-info {
           width: 500px;
@@ -212,7 +217,9 @@
           &-container {
             width: 350px;
             height: 400px;
+            border: white;
           }
+          border: white;
         }
         .project-info {
           width: 350px;

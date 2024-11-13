@@ -20,11 +20,21 @@
 
   .projects-container {
     display: grid;
-
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 projects in a row */
+    grid-gap: 20px; /* Adjust spacing between projects */
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 20px;
+
+    /* Responsive styling: 2 projects in a row on medium screens */
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Responsive styling: 1 project in a row on small screens */
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
     .project {
       background-color: #1e1e1e;
       border-radius: 10px;

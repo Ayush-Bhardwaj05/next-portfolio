@@ -26,22 +26,22 @@ function Projects() {
     },
     {
       image: "/snappy.png",
-      projectName: "Realtime Chat App",
+      projectName: "AI Calculator",
       projectDescription:
-        "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+        "This is an AI-based calculator built with React and Python (FastAPI). It enables users to perform complex mathematical calculations and features real-time updates and highly optimized calculations. The project is deployed on Vercel for the frontend and backend, making it easily accessible.",
       projectTech: [
         "React",
-        "Sockets",
-        "Node.js",
-        "Express",
-        "MongoDB",
+        "TypeScript",
+        "Python",
+        "FastAPI",
         "Styled Components",
+        "Axios",
       ],
       projectExternalLinks: {
-        github: "https://github.com/Ayush-Bhardwaj05/Snappy-chatApp/tree/main",
-        externalLink: "",
+        github: "https://github.com/Ayush-Bhardwaj05/AI-Calculator",
+        externalLink: "https://calc-fe.vercel.app/",
       },
-    }
+    },
   ];
   return (
     <div className="projects" id="work">
